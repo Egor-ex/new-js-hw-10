@@ -6,7 +6,8 @@
   "homepage": "https://Egor-ex.github.io/new-js-hw-10/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /new-js-hw-10/"
+    "build": "parcel build src/*.html --public-url /new-js-hw-10/",
+    "deploy": "npm run build && gh-pages -d dist -b master"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
